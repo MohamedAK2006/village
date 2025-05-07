@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>الصوامعة شرق</title>
+  <style>
+    body {
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      background-color: #fff8e1;
+      color: #333;
+      margin: 0;
+      padding: 0;
+      transition: all 0.3s ease-in-out;
+    }
+
+    header {
+      background-color: #fdd835;
+      padding: 20px;
+      text-align: center;
+      color: #333;
+    }
+
+    header h1 {
+      margin: 0;
+      font-size: 2.5em;
+    }
+
+    nav {
+      background-color: #fff3b0;
+      display: flex;
+      justify-content: center;
+      padding: 10px 0;
+      flex-wrap: wrap;
+    }
+
+    nav a {
+      color: #444;
+      text-decoration: none;
+      margin: 0 15px;
+      font-weight: bold;
+      cursor: pointer;
+    }
+
+    nav a:hover {
+      color: #000;
+    }
+
+    section {
+      padding: 30px;
+      border-bottom: 1px solid #eee;
+      display: none;
+      animation: fadeIn 0.5s ease-in-out;
+    }
+
+    section.active {
+      display: block;
+    }
+
+    section h2 {
+      color: #d4af37;
+    }
+
+    .place {
+      font-size: 1.5em;
+      font-weight: bold;
+      margin-top: 20px;
+      color: #8d6e00;
+    }
+
+    .description {
+      margin-bottom: 15px;
+    }
+
+    footer {
+      background-color: #fdd835;
+      text-align: center;
+      padding: 10px;
+      font-size: 0.9em;
+    }
+
+    @keyframes fadeIn {
+      from {opacity: 0; transform: translateY(20px);}
+      to {opacity: 1; transform: translateY(0);}
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>قرية الصوامعة شرق</h1>
+    <p>قلب الحضارة بين النيل والجبل</p>
+  </header>
+
+  <nav>
+    <a onclick="showSection('history')">التاريخ</a>
+    <a onclick="showSection('geo')">الجغرافيا والتقسيم</a>
+    <a onclick="showSection('people')">الشخصيات</a>
+    <a onclick="showSection('landmarks')">المعالم</a>
+    <a onclick="showSection('economy')">الاقتصاد القروي</a>
+  </nav>
+
+  <section id="history" class="active">
+    <h2>التاريخ</h2>
+    <p>يرجع اسم "الصوامعة" إلى الصوامع، وهي أماكن تخزين الغلال والقمح، مما يعكس الطابع الزراعي القديم للقرية. وقد لعبت القرية دورًا بارزًا في مواجهة الغزاة في فترات تاريخية مختلفة.</p>
+  </section>
+
+  <section id="geo">
+    <h2>الجغرافيا والتقسيم</h2>
+    <div class="place">الحاجر</div>
+    <div class="description">مركز القرية النشط إداريًا وسكانيًا، يضم المرافق الحكومية والأسواق.</div>
+
+    <div class="place">عميرة</div>
+    <div class="description">منطقة مشهورة بالناقة الشهيرة وبطبيعتها الريفية والزراعية.</div>
+
+    <div class="place">عزيز</div>
+    <div class="description">منطقة سكنية متوسطة الكثافة تشتهر بالأراضي الخصبة.</div>
+
+    <div class="place">الملاقط</div>
+    <div class="description">تجمع سكني على طول منطقة عميرة يطل على مناطق زراعية هائلة.</div>
+
+    <div class="place">الحساينة</div>
+    <div class="description">منطقة تجمع بين الأراضي الزراعية والمنازل التقليدية.</div>
+
+    <div class="place">الجبل</div>
+    <div class="description">منطقة مرتفعة تطل على القرية وتتميز بمناظرها الطبيعية الصخرية.</div>
+
+    <div class="place">الرباب</div>
+    <div class="description">منطقة تقع على حدود الصوامعة الجنوبية مع حي الكوثر وأخميم.</div>
+
+    <div class="place">الزنقور</div>
+    <div class="description">منطقة تقع عند أطراف القرية وتتميز بالهدوء والطابع الزراعي.</div>
+
+    <div class="place">الدبدابة</div>
+    <div class="description">منطقة زراعية 100% تشقها واحدة من أقدم الترع في مصر.</div>
+  </section>
+
+  <section id="people">
+    <h2>الشخصيات البارزة</h2>
+    <ul>
+      <li>العالم هشام أبو الزقالى - عالم بالطاقة النووية في روسيا</li>
+      <li>الصحفي محمود عبدالله دسوقي - صحفي بجريدة الأهرام، مهتم بالسياسة المصرية الخارجية</li>
+      <li>الأستاذ خلف الزناتي - نقيب المعلمين ورئيس اتحاد المعلمين العرب</li>
+      <li>المطرب موكش - غنى العديد من الأغاني التي تعبر عن قرية الصوامعة، أشهرها أغنية "دولة الصوامعة"</li>
+      <li>محمد علاء خلف - أول مبرمج بأل سلمان</li>
+    </ul>
+  </section>
+
+  <section id="landmarks">
+    <h2>المعالم</h2>
+    <p>أشهرها: باب البنية، والناقة بعميرة، إضافة إلى الجبل الشرقي والمعالم الطبيعية والصخرية المحيطة.</p>
+  </section>
+
+  <section id="economy">
+    <h2>الاقتصاد القروي</h2>
+    <p>يعتمد على الزراعة (قمح، ذرة، قصب)، وبعض الصناعات اليدوية، بالإضافة إلى خدمات حديثة كمحطات المياه والوحدات الصحية.</p>
+  </section>
+
+  <footer>
+    &copy; 2025 قرية الصوامعة شرق. جميع الحقوق محفوظة.
+  </footer>
+
+  <script>
+    function showSection(id) {
+      const sections = document.querySelectorAll('section');
+      sections.forEach(section => {
+        section.classList.remove('active');
+      });
+      document.getElementById(id).classList.add('active');
+    }
+  </script>
+</body>
+</html>
